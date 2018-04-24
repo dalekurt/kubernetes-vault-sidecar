@@ -4,7 +4,7 @@ FROM gcr.io/google_containers/alpine-with-bash:1.0
 ENV JQ_VERSION="1.5"
 ENV VAULTENV_VERSION="0.6.0"
 
-RUN apk add --update curl wget build-base && \
+RUN apk add --update curl wget jq build-base && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
